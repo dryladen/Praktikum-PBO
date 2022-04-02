@@ -36,7 +36,7 @@ public class Pertemuan_1 {
         // input data dengan bufferreader
         System.out.print("Masukkan jumlah data : ");
         int jumlah = Integer.parseInt(input3.readLine());
-        // memasukan data
+        // memasukan dataa
         for (int i = 0; i < jumlah; i++) {
             System.out.println("Masukkan data ke-" + (i + 1) + " : ");
             list.add(input3.readLine());

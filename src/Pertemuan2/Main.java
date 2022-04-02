@@ -10,6 +10,7 @@ public class Main {
         InputStreamReader prepare = new InputStreamReader(System.in);
         BufferedReader input = new BufferedReader(prepare);
         ArrayList<Mobil> dataMobil = new ArrayList<>();
+
         while (true) {
             System.out.println("====== Menu ======");
             System.out.println("1. Create");
