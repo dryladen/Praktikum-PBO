@@ -1,16 +1,22 @@
-package Pertemuan2;
+package Pertemuan3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+//import Pertemuan1.Hewan;
+
 public class Main {
     public static void main(String[] args) throws NumberFormatException, IOException {
+        // Hewan hwn = new Hewan("Ay am", "Ungg as", "Emas");
+        // fara : 061
+        // System.out.println(hwn.nama);
+        // System.out.println(hwn.jenis);
+        // System.out.println(hwn.warna);
         InputStreamReader prepare = new InputStreamReader(System.in);
         BufferedReader input = new BufferedReader(prepare);
         ArrayList<Mobil> dataMobil = new ArrayList<>();
-
         while (true) {
             System.out.println("====== Menu ======");
             System.out.println("1. Create");
@@ -52,15 +58,16 @@ public class Main {
                     System.out.println("Input Plat Mobil : ");
                     String nomor = input.readLine();
                     for (Mobil mobil : dataMobil) {
-                        if (mobil.plat.equals(nomor)) {
+                        // Ini semua gue yang ngoding by Nizar
+                        if (mobil.getPlat().equals(nomor)) {
                             System.out.print("Input Pemilik : ");
-                            mobil.setPemilik(input.readLine());
+                            mobil.SetPemilik(input.readLine());
                             System.out.print("Input Merk : ");
-                            mobil.setMerk(input.readLine());
+                            mobil.SetMerk(input.readLine());
                             System.out.print("Input Plat : ");
-                            mobil.setPlat(input.readLine());
+                            mobil.SetPlat(input.readLine());
                             System.out.print("Input CC : ");
-                            mobil.setCc(Integer.parseInt(input.readLine()));
+                            mobil.SetCC(Integer.parseInt(input.readLine()));
                             break;
                         }
                     }
@@ -70,7 +77,7 @@ public class Main {
                     System.out.print("Input plat mobil : ");
                     String noPlat = input.readLine();
                     for (int i = 0; i < dataMobil.size(); i++) {
-                        if (dataMobil.get(i).plat.equals(noPlat)) {
+                        if (dataMobil.get(i).getPlat().equals(noPlat)) {
                             dataMobil.remove(i);
                             break;
                         }
@@ -85,7 +92,6 @@ public class Main {
                     break;
                 case 5:
                     System.exit(0);
-                    break;
                 default:
                     System.out.println("Menu tidak ada");
                     break;
