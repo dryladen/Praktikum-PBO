@@ -27,6 +27,7 @@ public class Main {
             System.out.println("==================");
             System.out.print("Input Menu : ");
             int menu = Integer.parseInt(input.readLine());
+            // ngubah ngubah
             switch (menu) {
                 case 1:
                     System.out.println("Create");
@@ -45,8 +46,13 @@ public class Main {
                 case 2:
                     System.out.println("Read");
                     for (int i = 0; i < dataMobil.size(); i += 1) {
+                        // Ngoding by Vauwez : 054
                         System.out.println("Mobil ke-" + (i + 1));
-                        dataMobil.get(i).display();
+                        System.out.println("Merk    : " + dataMobil.get(i).getMerk());
+                        System.out.println("Pemilik : " + dataMobil.get(i).getPemilik());
+                        System.out.println("Plat    : " + dataMobil.get(i).getPlat());
+                        System.out.println("CC      : " + dataMobil.get(i).getCC());
+                        // dataMobil.get(i).display();
                     }
                     // Cara Lain pakai foreach
                     // for (Mobil mobil : dataMobil) {
@@ -58,7 +64,7 @@ public class Main {
                     System.out.println("Input Plat Mobil : ");
                     String nomor = input.readLine();
                     for (Mobil mobil : dataMobil) {
-                        // Ini semua gue yang ngoding by Nizar
+                        // Ini semua gue yang ngoding by Nizar : 059
                         if (mobil.getPlat().equals(nomor)) {
                             System.out.print("Input Pemilik : ");
                             mobil.SetPemilik(input.readLine());
@@ -82,7 +88,6 @@ public class Main {
                             break;
                         }
                     }
-                    // Nizzzzar : 059
                     // System.out.println("Mobil ke- : ");
                     // int nomor1 = Integer.parseInt(input.readLine());
                     // nomor1 -= 1;
