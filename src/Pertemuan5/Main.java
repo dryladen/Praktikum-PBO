@@ -1,4 +1,4 @@
-package Pertemuan4;
+package Pertemuan5;
 
 import java.io.BufferedReader;
 import java.io.IOException;
