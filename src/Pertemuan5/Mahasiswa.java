@@ -6,12 +6,12 @@ public class Mahasiswa extends Manusia {
     public Mahasiswa(String nama, String jenisKelamin, String alamat, String nim) {
         super(nama, jenisKelamin, alamat);
         this.nim = nim;
-        this.nim = "hal0";
     }
 
     final public String getNim() {
         return nim;
     }
+
     public void setNim(String nim) {
         this.nim = nim;
     }
@@ -26,6 +26,6 @@ public class Mahasiswa extends Manusia {
 
     @Override
     public void bernapas() {
-        System.out.println("Mahasiswa : "+this.nama+ " bernapas dengan lubang hidung kanan");
+        System.out.println("Mahasiswa : " + this.nama + " bernapas dengan lubang hidung kanan");
     }
 }
